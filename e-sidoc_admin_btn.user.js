@@ -2,10 +2,10 @@
 // ==UserScript==
 // @name         Administrer votre portail e-sidoc v2
 // @namespace    https://twitter.com/jeromemtl
-// @version      0.4
+// @version      0.5
 // @description  Rajoute un élément au menu "administrer votre portail" à e-sidoc v2
 // @author       JeromeMTL
-// @icon         http://frontend2.esidoc.fr/img/favicon-96x96.png?ver=5ffeb32
+// @icon         https://frontend.esidoc.fr/img/favicon-32x32.png?ver=acbc186d
 // @include      https://*.esidoc.fr/*
 // @exclude      https://administration.esidoc.fr/*
 // @exclude      https://authentification.esidoc.fr/*
