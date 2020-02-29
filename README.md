@@ -2,6 +2,6 @@
 
 Rajoute un élément "Administrer le portail" dans le menu "Mon compte".
 
-# Comment l'installer
+# Comment l'utiliser
 
  Installez l'extension [Tampermonkey](https://www.tampermonkey.net/) pour votre navigateur.
