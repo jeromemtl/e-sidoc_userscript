@@ -1,7 +1,8 @@
+![Administrer le portail](https://jeromemtl.github.io/e-sidoc_userscript/image/exemple.png)
+
 # A quoi sert ce script
 
 Rajoute un élément "Administrer le portail" dans le menu "Mon compte".
-![Administrer le portail](https://jeromemtl.github.io/e-sidoc_userscript/image/exemple.png)
 
 # Comment l'utiliser
 
