@@ -4,7 +4,7 @@
 
 ## A quoi sert ce script ?
 
-Ajoute un élément "Administrer le portail" dans le menu "Mon compte".
+Ajoute un élément "Administrer le portail" dans le menu "Mon compte".  
 Plus besoin de taper d'URL, vous pourrez accéder à l'administration de e-sidoc en 2 clics.
 
 ## Comment l'utiliser ?
