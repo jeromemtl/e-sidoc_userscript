@@ -75,7 +75,7 @@
             if (requirePresent){
                 var requireContext = config.requireContext || "_";
                 //var location = CKEDITOR.getUrl("plugins/codemirror/js");
-                var location = CKEDITOR.getUrl("//jeromemtl.github.io/e-sidoc_userscript/ckeditor/plugins/codemirror/js").substring(0,77);
+                var location = CKEDITOR.getUrl("https://jeromemtl.github.io/e-sidoc_userscript/ckeditor/plugins/codemirror/js/").substring(0,77);
                 
                 pluginRequire = require.config({
                     context: requireContext,
