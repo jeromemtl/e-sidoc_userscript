@@ -22,7 +22,10 @@ Plus besoin de taper d'URL, vous pourrez accéder à l'administration de e-sidoc
 
 #### A quoi sert ce script ?
 
-Affiche la liste des exemplaires, l'emplacement, la cote et la disponnibilité de dans le premier niveau de résultat de recherche.
+Affiche la liste des exemplaires, l'emplacement, la cote et la disponnibilité de dans le premier niveau de résultat de recherche.  
+Vert : disponnible.  
+Orange : indisponnible (document prêté ou réservé).  
+Rouge : perdu.
 
 #### Comment l'utiliser ?
 
