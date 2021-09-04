@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         e-sidoc - emplacement, cote et disponnibilité
 // @namespace    http://www.twitter.com/jeromemtl
-// @version      0.1
+// @version      0.2
 // @description  Affiche l'emplacement, la cote et la disponnibilité des exemplaires dans le premier niveau de résultat de recherche
 // @author       JeromeMTL
 // @match        https://*.esidoc.fr/
@@ -43,7 +43,7 @@ article.notice .disponibilite {
 
 (function() {
     'use strict';
- 
+
     waitForKeyElements(".table-guide", addEmplacement);
 
     function addEmplacement(){
@@ -65,30 +65,34 @@ article.notice .disponibilite {
 
                 var nbExemplaire=document.getElementsByClassName('search-result')[i].getElementsByTagName('tr').length-1;
 
-                //pr chq exemplaire (ls infos sont ttes les 3 celulles)
-                for(var j=0; j<(nbExemplaire*3); j+=3){
+                //pr chq exemplaire (ls infos sont ttes les 4 celulles)
+                for(var j=0; j<(nbExemplaire*4); j+=4){
                     //on recup ls infos des exemplaires
                     var cote=document.getElementsByClassName('search-result')[i].getElementsByTagName('td')[j].innerText;
                     var emplacement=document.getElementsByClassName('search-result')[i].getElementsByTagName('td')[j+1].innerText;
                     var statut=document.getElementsByClassName('search-result')[i].getElementsByTagName('td')[j+2].innerText;
 
                     //Change la couleur du texte selon le statut
+                    var color='';
                     switch (statut) {
-                        case 'Disponible':
-                            var color=''; //on change rien (vert ou blanc)
+                        case 'Document réservé':
+                            color='#f1c40f'; //jaune
+                            break;
+                        case 'Document prêté':
+                            color='#d97f00'; //orange
                             break;
                         case 'Indisponible':
-                            var color='#f00'; //rouge
+                            color='#f00'; //rouge
                             break;
-                        default: //Document prêté ou Document réservé
-                            var color='#d97f00'; //orange
+                        default: //Disponnible
+                            //on change rien (vert ou blanc)
                     }
 
                     //et on remplace le contenu
                     document.getElementsByClassName('disponibilite')[i].getElementsByClassName('btn')[0].innerHTML+='<div style="color:'+color+';"><strong>'+emplacement+'</strong> - '+cote+'</div>';
 
                 }
-            } 
+            }
         }
     }
 })();
